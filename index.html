@@ -19,7 +19,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'color-one': '#ABEF5F',
+                'color-second': '#dfdbdb'
               }
             }
           }
@@ -34,10 +35,59 @@
 <body class="manrope-font">
 
     <!-- header section start here -->
-     <header>
+     <header class="px-4 md:px-0 bg-color-second">
           <!-- navbar section start here -->
-           <nav>
-
+           <nav class=" md:container md:mx-auto">
+            <div class="navbar ">
+                <div class="navbar-start">
+                  
+                  <a class="flex justify-center items-center gap-1">
+                    <span class=""><i class="fa-solid text-2xl fa-circle-arrow-up text-color-one rotate-45"></i></span>
+                    <span class="text-3xl font-bold ">Rinterio</span>
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 gap-1">
+                    <li><a class="hover:font-semibold ">Home</a></li>
+                    <li><a class="hover:font-semibold ">Service</a></li>
+                    <li><a class="hover:font-semibold ">Portfolio</a></li>
+                    <li><a class="hover:font-semibold ">Blogs</a></li>
+                    <li><a class="hover:font-semibold ">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost bg-gray-100 shadow-md rounded-full p-3 lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5  "
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm right-0 dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Home</a></li>
+                          <li><a>Service</a></li>
+                          <li><a>Portfolio</a></li>
+                          <li><a>Blogs</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                    <div class="space-x-4 hidden md:block">
+                        <a ><i class="fa-solid fa-magnifying-glass bg-gray-50 shadow rounded-full p-3"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping bg-gray-50 shadow rounded-full p-3"></i></a> 
+                        <a class="btn rounded-full bg-color-one font-bold">Book Consult <i class="fa-solid text-2xl fa-circle-arrow-up text-black  rotate-45"></i></a>
+                    </div>
+                </div>
+              </div>
            </nav>
           <!-- hero section start here -->
            <section class="hero-section">
